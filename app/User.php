@@ -31,8 +31,10 @@ class User extends Authenticatable
     * Get the user posts'
     */
 
-    public function posts() 
+    public function posts()
     {
         return $this->hasMany('App\Post');
     }
+
+    
 }

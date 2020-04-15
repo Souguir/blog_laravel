@@ -1,22 +1,37 @@
 @extends('layouts.main')
-
+@section('title', '| Contact')
 
 @section('content')
-<h1> Nous contacter WALLAH! </h1>
-<form action="{{ url('contact') }}" method="POST" >
-        <label for="nom">Entrez votre nom: </label>
-        <input type="text" class="form-control {{ $errors->has('nom') ? 'is-invalid' : '' }}" name="nom" id="nom" placeholder="Votre nom" value="{{ old('nom') }}">
-        {!! $errors->first('nom', '<div class="invalid-feedback">:message</div>') !!}
-        <label for="email">Entrez votre email: </label>
-        <input type="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" name="email" id="email" placeholder="Votre email" value="{{ old('email') }}">
-        {!! $errors->first('email', '<div class="invalid-feedback">:message</div>') !!}
-        <textarea rows="5" cols="33" class="form-control {{ $errors->has('message') ? 'is-invalid' : '' }}" name="message" id="message" placeholder="Votre message">{{ old('message') }}</textarea>
-        {!! $errors->first('message', '<div class="invalid-feedback">:message</div>') !!}
-        <input type="submit" name = "envoyer"/>
+
+<div class="row">
+        <div class="col-md-12">
+          <h1>Contactez Nous</h1>
+          <hr>
+          <form action="{{ url('contact') }}" method="POST" >
+            {{csrf_field()}}
+          <form>
+            <div class="form-group">
+              <label name="contact_name">Nom:</label>
+              <input id="contact_name" name="contact_name" class="form-control">
+            </div>
 
 
+            <div class="form-group">
+              <label name="contact_email">Email:</label>
+              <input id="contact_email" name="contact_email" class="form-control">
+            </div>
+
+
+
+            <div class="form-group">
+              <label name="contact_message">Message:</label>
+              <textarea id="contact_message" name="contact_message" class="form-control">Ecrivez votre message ici...</textarea>
+            </div>
+
+            <input type="submit" value="Envoyer Message" class="btn btn-success">
+          </form>
+        </div>
+      </div>
 </form>
 
-
 @endsection
-

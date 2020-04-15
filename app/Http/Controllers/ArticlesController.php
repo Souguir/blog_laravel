@@ -3,16 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class ArticlesController extends Controller
 {
-      
-    public function show($post_name) {
+    public function getArticles(){
+      $posts=Post::all();
+      return view('pages.archive')->withPosts($posts);
+    }
 
-        $post = \App\Post::where('post_name', $post_name)->first(); //get first post with post_nam==$post_name
-        return view('posts.single', array(  //Pass the post to the view
-            'post' => $post
-        ));
+    public function getSingle($id){
+      $post= Post::where('id','=',$id)->first();
+      return view('posts.single')->withPost($post);
     }
 
 }
