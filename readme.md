@@ -29,9 +29,9 @@
    3- Identification/Authentification
    ----------------------------------------------------------------------------------
    Pour permettre la création, la modification et la suppression des articles. Elle est donc obligatoire
-   Dummy account for testing : 
-   souguir@gmail.com
-   Mot de passe : 111111
+      Dummy account for testing : 
+      souguir@gmail.com
+      Mot de passe : 111111
 
     URLs pour tester:
    * http://localhost:8080/login
