@@ -13,9 +13,9 @@
      
    1- Gestion des commentaires
    ------------------------------
-  * Commenter des articles. Ses commentaires se trouveront sur la page de l’article correspondant
-  * Modifier et supprimer tous les commentaires par tous les admins
-  *Des avatars sont ajoutés automatiquement pour chaque commentaire
+  * Commenter des articles. Ses commentaires se trouveront sur la page de l’article correspondant</br>
+  * Modifier et supprimer tous les commentaires par tous les admins</br>
+  *Des avatars sont ajoutés automatiquement pour chaque commentaire</br>
   * Exemple d'URL pour modifier les commentaires: http://localhost:8080/posts/106
  
    2- CRUD des articles
