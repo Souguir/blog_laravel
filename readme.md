@@ -30,7 +30,7 @@
    * Pour modifier et supprimer les articles procéder comme suit :
 Sur la page « Mes articles » cliquez sur « consulter » pour voir l’article ou sur « modifier » pour le modifier ou le supprimer.
      
-     3- Identification / Authentification
+   3- Identification/Authentification
    ----------------------------------------------------------------------------------
 Pour permettre la création, la modification et la suppression des articles. Elle est donc obligatoire
 Dummy account for testing : 
@@ -42,6 +42,6 @@ Mot de passe : 111111
    * http://localhost:8080/register
      
         
-   5- Identification avec Google et Github (via Socialite)
+   4- Identification avec Google et Github (via Socialite)
    --------------------------------------------------------------
   On a créé le bouton permettant de s’identifier avec GitHub (Je vous invite à consulter le design du bouton). Malheureusement, la version Laravel 5.4 ne permet pas l’utilisation de Socialite
