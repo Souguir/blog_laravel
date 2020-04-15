@@ -28,7 +28,7 @@
      
    3- Identification/Authentification
    ----------------------------------------------------------------------------------
-   Pour permettre la création, la modification et la suppression des articles. Elle est donc obligatoire
+   Pour permettre la création, la modification et la suppression des articles. Elle est donc obligatoire</br>
       Dummy account for testing : 
       souguir@gmail.com
       Mot de passe : 111111
